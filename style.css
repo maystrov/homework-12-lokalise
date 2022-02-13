@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Graphik LCG", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+.transparent_button {
+  font-family: "Graphik LCG", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 35px;
+  cursor: pointer;
+}
+
+.colored_button {
+  font-family: "Graphik LCG", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF6336;
+  border: 1px solid #FF6336;
+  padding: 0 22px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.header_container {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_left_section {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo_link {
+  display: block;
+  margin: 3px 50px 0 0;
+}
+
+.header_nav_list {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_nav_link {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* Intro */
+.intro {
+  padding: 125px 0 175px;
+}
+
+.intro_inner {
+  background-image: url(images/intro_image.png);
+  background-repeat: no-repeat;
+  background-position: 535px 20px;
+}
+
+.intro_description {
+  max-width: 575px;
+}
+
+.intro_title {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.intro_subtitle {
+  max-width: 490px;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.colored_intro_button {
+  line-height: 60px;
+  padding: 0 43px 0;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.transparent_intro_button {
+  padding: 0 30px 0 25px;
+  line-height: 60px;
+}
+
+.intro_text {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.companies {
+  background-color: #FF9C7D;
+  padding: 108px 0 95px;
+}
+
+.section_title {
+  max-width: 720px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  margin-left: 340px;
+  margin-bottom: 70px;
+}
+
+.companies_logos_list {
+  padding-left: 27px;
+  padding-right: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companies_list_item:last-child {
+  padding-bottom: 7px;
+}
+
+/* Features section */
+.features_section {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.feature_card {
+  display: flex;
+  margin-bottom: 250px;
+  justify-content: space-between;
+}
+
+.feature_card:last-child {
+  margin-bottom: 0;
+}
+
+.feature_card:nth-child(even) {
+  flex-direction: row-reverse;
+  padding-right: 70px;
+}
+
+.feature_card:nth-child(even) .title {
+  max-width: 370px;
+}
+
+.feature_card:nth-child(even) .feature_text {
+  max-width: 450px;
+}
+
+.feature_describe_section {
+  padding-top: 150px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.feature_text {
+  margin: 30px 0;
+}
+
+.feature_subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.feature_image {
+  display: block;
+}
+
+/* Whatcanyou */
+.whatcanyou {
+  background-color: #FFF8E4;
+}
+
+.whatcanyou_container {
+  padding: 120px 40px 150px;
+  text-align: center;
+}
+
+.whatcanyou_cards_section {
+  margin-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.whatcanyou_card {
+  width: 330px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.whatcanyou_image {
+  margin-bottom: 20px;
+}
+
+.whatcanyou_subtitle {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.whatcanyou_text {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/* Boost */
+.boost_section {
+  padding-top: 155px;
+  padding-bottom: 190px;
+}
+
+.boost_cards_section {
+  margin-top: 75px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.boost_cards_section:last-child {
+  justify-content: space-between;
+}
+
+.boost_card {
+  width: 410px;
+}
+
+.boost_image {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.boost_card:last-child {
+  padding-right: 0;
+}
+
+.boost_card_subtitle {
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.boost_cars_text {
+  margin-bottom: 25px;
+}
+
+.boost_card_link {
+  text-decoration: underline;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
