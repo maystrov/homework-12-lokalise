@@ -17,6 +17,22 @@ body {
   max-width: 1290px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  background-image: linear-gradient(#FF6336, #FF6336);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+}
+
+a:hover {
+  background-size: 100% 1px;
+  color: #FF6336;
+  transition-duration: 0.5s;
+}
+
 .transparent_button {
   font-family: "Graphik LCG", serif;
   font-weight: 600;
@@ -27,6 +43,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 0px 35px;
   cursor: pointer;
+  transition: all 0.4s;
+}
+
+.transparent_button:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
 }
 
 .colored_button {
@@ -41,11 +63,17 @@ body {
   padding: 0 22px;
   margin: 0 auto;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.colored_button:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
 }
 
 /* Header */
 .header {
-  padding: 24px 0;
+  padding: 24px 0 23px;
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -66,6 +94,9 @@ body {
   display: block;
   margin: 3px 50px 0 0;
 }
+.header_logo_link:hover {
+  background-size: 0% 1px;
+}
 
 .header_nav_list {
   width: 550px;
@@ -79,6 +110,10 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+  transition: all 0.4s;
+}
+.header_nav_link:hover {
+  transform: scale(1.1);
 }
 
 /* Intro */
@@ -152,8 +187,16 @@ body {
   align-items: center;
 }
 
+.companies_link:hover {
+  background-size: 0% 1px;
+}
+
 .companies_list_item:last-child {
   padding-bottom: 7px;
+}
+
+.companies_image:hover {
+  transform: scale(1.1);
 }
 
 /* Features section */
@@ -206,6 +249,18 @@ body {
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
+  display: inline;
+  transition: all 0.3s;
+}
+.feature_subtitle:hover {
+  background-size: 0% 1px;
+}
+.feature_subtitle:hover {
+  text-decoration: underline;
+  text-decoration-color: #FF6336;
+}
+.feature_subtitle:hover {
+  color: #FF6336;
 }
 
 .feature_image {
@@ -218,21 +273,22 @@ body {
 }
 
 .whatcanyou_container {
-  padding: 120px 40px 150px;
+  padding: 118px 40px 85px;
   text-align: center;
 }
 
 .whatcanyou_cards_section {
-  margin-top: 58px;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .whatcanyou_card {
   width: 330px;
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .whatcanyou_image {
@@ -251,10 +307,18 @@ body {
   line-height: 25px;
 }
 
+.whatcanyou_link {
+  text-decoration: underline;
+}
+.whatcanyou_link:hover {
+  transition-duration: 1s;
+  color: #FF6336;
+}
+
 /* Boost */
 .boost_section {
   padding-top: 155px;
-  padding-bottom: 190px;
+  padding-bottom: 184px;
 }
 
 .boost_cards_section {
@@ -296,58 +360,74 @@ body {
   text-decoration: underline;
   color: #000;
 }
+.boost_card_link:hover {
+  transition-duration: 1s;
+  color: #FF6336;
+}
 
 .review {
   background-color: #C9E8F2;
   padding: 53px 0 105px;
 }
+
 .review_inner {
   display: flex;
 }
+
 .review_description {
   padding-right: 90px;
 }
+
 .review_text {
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 23px;
 }
+
 .review_person {
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 7px;
 }
+
 .review_logo:hover path {
-  fill: blue;
+  fill: #FF6336;
 }
 
 .cake {
-  padding: 80px 0;
+  padding: 82px 0;
   background-color: #DABC98;
 }
+
 .cake_inner {
   display: flex;
-}
-.cake_title_section {
-  padding: 47px 105px 30px 243px;
+  align-items: center;
   background: url(../images/cake/cake_cake.png) left no-repeat;
 }
+
+.cake_title_section {
+  padding-left: 250px;
+}
+
 .cake_title {
   font-weight: 600;
   font-size: 35px;
   line-height: 50px;
 }
+
 .cake_rating_section {
-  padding: 30px 62px 22px 70px;
+  padding: 30px 30px 22px 70px;
   display: flex;
   border-left: 1px solid #000;
 }
+
 .cake_users_image {
   margin-right: 70px;
 }
 
+/* Integration Section */
 .integration {
-  padding: 176px 0 166px;
+  padding: 174px 0 164px;
 }
 
 .integration_title {
@@ -378,8 +458,9 @@ body {
   display: block;
 }
 
+/* Why section */
 .why {
-  padding: 158px 0 119px;
+  padding: 156px 0 118px;
   background-color: #FF9C7D;
 }
 
@@ -395,6 +476,8 @@ body {
 .why_subtitle {
   text-align: center;
   margin-bottom: 55px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .why_button {
@@ -405,6 +488,126 @@ body {
   font-size: 17px;
   line-height: 60px;
   padding: 0 40px;
+}
+
+.footer {
+  padding: 95px 0 0 0;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #000;
+}
+
+.footer_inner {
+  display: flex;
+  padding-bottom: 95px;
+  border-bottom: 1px solid #000;
+}
+
+.footer_column {
+  max-width: 370px;
+  padding-right: 70px;
+}
+
+.footer_column_title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 28px;
+}
+
+.footer_image {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.footer_specialized_logo {
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.footer_column_subtitle {
+  margin-bottom: 15px;
+}
+
+.footer_column_link {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_nav_columns_section {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin-left: 70px;
+}
+
+.footer_nav_column {
+  width: 187px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.footer_nav_column_title {
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer_nav_list_link {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  line-height: 15px;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+.footer_nav_list_link:hover {
+  background-size: 0% 1px;
+}
+.footer_nav_list_link:hover {
+  text-decoration: underline;
+  text-decoration-color: #FF6336;
+}
+.footer_nav_list_link:hover {
+  transition-duration: 0.5s;
+}
+
+/* Copyright section */
+.copyright {
+  display: flex;
+  padding: 50px 0 43px;
+}
+
+.copyright_left_item {
+  display: flex;
+}
+
+.copyright_logo_link:hover .copyright_logo path {
+  fill: #FF6336;
+  transition-duration: 0.5s;
+}
+
+.copyright_logo path {
+  transition-duration: 0.5s;
+}
+
+.copyright_logo {
+  margin-right: 15px;
+}
+
+.copyright_text {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.logotext {
+  max-width: 300px;
+}
+
+.copyright_right_item {
+  margin-left: auto;
+  margin-right: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+@mixin link_style {
+    background-image: linear-gradient(#FF6336,#FF6336 );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s;
+}
+
+@mixin underline {
+    background-size: 100% 1px;
+}
+
+@mixin no_underline {
+    background-size: 0% 1px;
+}
+
+@mixin no_under {
+    &:hover {
+        @include no_underline();
+    }
+}
+
+@mixin black_decor {
+    transition: all 0.3s;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin green_decor {
+    transition: all 0.3s;
+    &:hover {
+        border-bottom: 1px green solid;
+    }
+}
+
+// @mixin color_decor($color1, $color2) {
+//     text-decoration: underline;
+//     text-decoration-color: $color1 ;
+//     transition: all 0.5s;
+//     &:hover {
+//         text-decoration-color: $color2 ;
+//         transition: all 0.5s;
+//     }
+// }
+
+@mixin color_decor($color1) {
+    transition-duration: 0.5s;
+    &:hover {
+        color: $color1;
+        text-decoration: underline;
+        // text-decoration-color:  $color2;
+        
+    }
+}
+
+@mixin test($tc, $bc) {
+    color: $tc;
+    background-color: $bc;
+}
+
+
+
