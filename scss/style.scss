@@ -432,7 +432,7 @@ a:hover {
   .cake_inner {
     display: flex;
     align-items: center;
-    background: url(../images/cake/cake_cake.png) left no-repeat;
+    background: url(images/cake/cake_cake.png) left no-repeat ;
   }
   .cake_title_section {
     padding-left: 250px ;
@@ -627,6 +627,59 @@ a:hover {
     margin-left: auto;
     margin-right: 75px;
   }
-  
 
-  
+  //    Media 
+
+  @media (max-width: 1340px) {
+    .container {
+      width: auto;
+      max-width: 1340px;
+    }
+    body {
+      padding: 0 10px;
+    }
+    .header {
+      width:auto;
+      padding-right: 10px;
+    }
+
+    .transparent_button {
+      display: block;
+    }
+    ul.header_nav_list {
+      min-width: 470px;
+      width: 100%;
+    }
+    .header_container {
+      display: block;
+    }
+
+    .button_section {
+      display: flex;
+      max-width: 255px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .nav {
+      display: flex;
+      min-width: 470px; 
+      max-width: 700px;
+      width: 100%;
+      margin-left: auto;
+      
+    }
+
+    .header_left_section {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: auto;
+      background-color: #fff;
+      // max-width: 1340px;
+    }
+     
+  }

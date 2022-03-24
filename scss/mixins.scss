@@ -34,23 +34,12 @@
     }
 }
 
-// @mixin color_decor($color1, $color2) {
-//     text-decoration: underline;
-//     text-decoration-color: $color1 ;
-//     transition: all 0.5s;
-//     &:hover {
-//         text-decoration-color: $color2 ;
-//         transition: all 0.5s;
-//     }
-// }
 
 @mixin color_decor($color1) {
     transition-duration: 0.5s;
     &:hover {
         color: $color1;
         text-decoration: underline;
-        // text-decoration-color:  $color2;
-        
     }
 }
 
