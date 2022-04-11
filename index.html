@@ -17,27 +17,33 @@
                     <img  src="icons/lokalise_logo.svg" alt="Logo" class="header_logo">
                 </a>
 
-            
-
-                <nav class="nav">
-                    <ul class="header_nav_list">
-                        <li class="header_nav_list_item">
-                            <a href="#" class="header_nav_link">Product</a>
-                        </li>
-                        <li class="header_nav_list_item">
-                            <a href="#" class="header_nav_link">Features</a>
-                        </li>
-                        <li class="header_nav_list_item">
-                            <a href="#" class="header_nav_link">Pricing</a>
-                        </li>
-                        <li class="header_nav_list_item">
-                            <a href="#" class="header_nav_link">Case studies</a>
-                        </li>
-                        <li class="header_nav_list_item">
-                            <a href="#" class="header_nav_link">Resourses</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="wrapper">
+                    <nav class="nav">
+                        <input type="checkbox" id="check-menu">
+                        <label class="burger-label" for="check-menu"></label>
+                        <div class="burger-line first"></div>
+                        <div class="burger-line second"></div>
+                        <div class="burger-line third"></div>
+                        <div class="burger-line fourth"></div>
+                        <ul class="header_nav_list">
+                            <li class="header_nav_list_item">
+                                <a href="#" class="header_nav_link">Product</a>
+                            </li>
+                            <li class="header_nav_list_item">
+                                <a href="#" class="header_nav_link">Features</a>
+                            </li>
+                            <li class="header_nav_list_item">
+                                <a href="#" class="header_nav_link">Pricing</a>
+                            </li>
+                            <li class="header_nav_list_item">
+                                <a href="#" class="header_nav_link">Case studies</a>
+                            </li>
+                            <li class="header_nav_list_item">
+                                <a href="#" class="header_nav_link">Resourses</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="button_section">
                 <button class="transparent_button">Log in</button>
@@ -46,7 +52,7 @@
         </div>
     </header>
 
-    <!-- <main>
+    <main>
         <section class="intro">
             <div class="container">
                 <div class="intro_inner">
@@ -59,9 +65,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="companies">
+        <section class="companies">
             <div class="container">
                 <h2 class="section_title">The preferred localization tool of 1500+ companies</h2>
                 <ul class="companies_logos_list">
@@ -97,7 +103,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <section class="features_section">
             <div class="container">
@@ -191,7 +197,7 @@
 
         <section class="boost_section">
             <div class="container">
-                <h2 class="title">Boost your localization team&prime;s productivity tenfold</h2>
+                <h2 class="title boost_title">Boost your localization team&prime;s productivity tenfold</h2>
                 <div class="boost_cards_section">
                     <div class="boost_card">
                         <img src="images/boost/managers.png" alt="managers" class="boost_image">
@@ -234,7 +240,9 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="images/review_photo.jpg" alt="review_photo" class="review_photo">
+                    <div class="review_image_wrapper">
+                        <img src="images/review_photo.jpg" alt="review_photo" class="review_photo">
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,13 +277,13 @@
                 <button class="why_button colored_button">Try it free</button>
             </div>
         </section>
-    </main> -->
+    </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer_inner">
                 <div class="footer_column">
-                    <h2 class="footer_column_title">Case Studies</h2>
+                    <h2 class="footer_column_title no_style">Case Studies</h2>
                     <img src="images/Case_image.jpg" alt="bicycle_race_photo" class="footer_image">
                     <img src="icons/specialized.svg" alt="specialized_logo" class="footer_specialized_logo">
                     <p class="footer_column_subtitle">Riding towards global success with a 100% teammate enthusiasm</p>
@@ -284,7 +292,9 @@
 
                 <div class="footer_nav_columns_section">
                     <div class="footer_nav_column">
-                        <h3 class="footer_nav_column_title">Product</h3>
+                        <a href="javascript://" class="footer_title_link">
+                            <h3 class="footer_nav_column_title">Product</h3>
+                        </a>
                         <ul class="footer_nav_list">
                            
                             <li class="footer_nav_list_item">
@@ -322,7 +332,9 @@
                         </ul>
                     </div>
                     <div class="footer_nav_column">
-                        <h3 class="footer_nav_column_title">Support</h3>
+                        <a href="javascript://" class="footer_title_link">
+                            <h3 class="footer_nav_column_title">Support</h3>
+                        </a>
                         <ul class="footer_nav_list">
                             <li class="footer_nav_list_item">
                                 <a class="footer_nav_list_link" href="#">Contacts
@@ -359,7 +371,9 @@
                         </ul>
                     </div>
                     <div class="footer_nav_column">
-                        <h3 class="footer_nav_column_title">Company</h3>
+                        <a href="javascript://" class="footer_title_link">
+                            <h3 class="footer_nav_column_title">Company</h3>
+                        </a>
                         <ul class="footer_nav_list">
                             <li class="footer_nav_list_item">
                                 <a class="footer_nav_list_link" href="#">About
@@ -384,7 +398,9 @@
                         </ul>
                     </div>
                     <div class="footer_nav_column">
-                        <h3 class="footer_nav_column_title">Legal</h3>
+                        <a href="javascript://" class="footer_title_link">
+                            <h3 class="footer_nav_column_title">Legal</h3>
+                        </a>
                         <ul class="footer_nav_list">
                             <li class="footer_nav_list_item">
                                 <a class="footer_nav_list_link" href="#">Terms of Service
@@ -442,6 +458,20 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
+
+    <script>
+
+        let menuTitle = document.querySelector('.footer_nav_column_title');
+        let menu = document.querySelector('.footer_nav_list')
+        
+        menuTitle.addEventListener('click', function(){
+            menu.classList.toggle('list_open');
+            menuTitle.classList.toggle('cross')
+        })
+        
+    </script>
+
+
 </body>
 </html>
